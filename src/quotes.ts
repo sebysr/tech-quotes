@@ -1289,6 +1289,21 @@ const quotes: RawQuote[] = [
     authorName: 'Sandi Metz',
     authorDescription: 'Software Developer',
     authorWiki: 'https://en.wikipedia.org/wiki/Sandi_Metz'
+  },
+  {
+    text: 'Viral dilemma: press blue and risk your life to save everyone, or press red and guarantee your own survival. The debate pits moral altruism against game‑theory rationality. Which button do you press?',
+    authorName: 'Unknown',
+    authorDescription: 'Author'
+  },
+  {
+    text: 'Use AI to work with you to bring your vision to life.',
+    authorName: '@trq212',
+    authorDescription: 'Software Developer'
+  },
+  {
+    text: 'There are a minimum of three developers on any project. You in the past. You right now. You in the future.\nThe only way you can communicate with you in the past and future is with documentation, commit history and expressive code or comments.',
+    authorName: 'RoboErectus',
+    authorDescription: 'Engineer'
   }
 ]
 
