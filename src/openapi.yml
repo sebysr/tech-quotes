@@ -6,13 +6,13 @@ info:
   description: |-
     A simple API to get inspiring tech quotes.
 
-    Source code on GitHub: https://github.com/FullStackBulletin/tech-quotes
+    Source code on GitHub: https://github.com/sebysr/tech-quotes
   license:
     name: MIT
-    url: https://raw.githubusercontent.com/FullStackBulletin/tech-quotes/main/LICENSE
+    url: https://raw.githubusercontent.com/sebysr/tech-quotes/main/LICENSE
 
 servers:
-  - url: https://fullStackbulletin.github.io/tech-quotes
+  - url: https://sebysr.github.io/tech-quotes
     description: GitHub Pages
 
 tags:

@@ -6,19 +6,19 @@
   "type": "module",
   "scripts": {
     "test": "eslint scripts/**/*.ts src/**/*.ts && tsc",
-    "build": "rm -rf dist && node --import tsx scripts/build.ts"
+    "build": "node --import tsx scripts/build.ts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FullStackBulletin/tech-quotes.git"
+    "url": "git+https://github.com/sebysr/tech-quotes.git"
   },
   "keywords": [],
   "author": "Luciano Mammino",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FullStackBulletin/tech-quotes/issues"
+    "url": "https://github.com/sebysr/tech-quotes/issues"
   },
-  "homepage": "https://github.com/FullStackBulletin/tech-quotes#readme",
+  "homepage": "https://github.com/sebysr/tech-quotes#readme",
   "devDependencies": {
     "@types/node": "^20.4.5",
     "@typescript-eslint/eslint-plugin": "^5.62.0",

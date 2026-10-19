@@ -1,4 +1,4 @@
-import { writeFile, readFile, copyFile } from 'node:fs/promises'
+import { writeFile, readFile, copyFile, rm } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { mkdirp } from 'mkdirp'
@@ -6,14 +6,17 @@ import slugify from 'slugify'
 import { parse } from 'yaml'
 import quotes, { type Quote, type Author, type AuthorDescription, type RawQuote, type AuthorWithQuotes } from '../src/quotes.js'
 
-const REPO_URL = 'https://github.com/FullStackBulletin/tech-quotes'
-const GH_PAGES_URL = 'https://fullStackbulletin.github.io/tech-quotes'
-const baseUrl = process.env.BASE_URL ?? GH_PAGES_URL
+const REPO_URL = 'https://github.com/sebysr/tech-quotes'
+const GH_PAGES_URL = 'https://sebysr.github.io/tech-quotes'
+const baseUrl = (process.env.BASE_URL ?? GH_PAGES_URL).replace(/\/$/, '')
 
 const currentDir = dirname(fileURLToPath(import.meta.url))
 const destPath: string = join(currentDir, '..', 'dist')
 const quotesPath: string = join(currentDir, '..', 'dist', 'quotes')
 const authorsPath: string = join(currentDir, '..', 'dist', 'authors')
+
+// Removes the previous build output
+await rm(destPath, { recursive: true, force: true })
 
 // Creates the `dest` and `dest/quotes` folders if they don't exist
 await Promise.all([

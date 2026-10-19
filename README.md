@@ -1,6 +1,6 @@
 # tech-quotes
 
-[![main](https://github.com/FullStackBulletin/tech-quotes/actions/workflows/test.yaml/badge.svg)](https://github.com/FullStackBulletin/tech-quotes/actions/workflows/test.yaml)
+[![main](https://github.com/sebysr/tech-quotes/actions/workflows/test.yaml/badge.svg)](https://github.com/sebysr/tech-quotes/actions/workflows/test.yaml)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 ![ts](https://badgen.net/badge/Built%20With/TypeScript/blue)
 
@@ -9,14 +9,16 @@ An API to get interesting tech-related quotes (powered by GitHub pages)
 
 ## Usage
 
-The base URL of the API is `https://fullStackbulletin.github.io/tech-quotes`.
+The base URL of the API is `https://sebysr.github.io/tech-quotes`.
+
+> **Note:** this is a personal fork. The static API is published from this repository's GitHub Pages once the `release` workflow has been run (or can be built locally with `npm run build`).
 
 API Documentation is available as OpenAPI specification:
 
-  - [OpenAPI definition (YAML)](https://fullStackbulletin.github.io/tech-quotes/openapi.yml)
-  - [OpenAPI definition (JSON)](https://fullStackbulletin.github.io/tech-quotes/openapi.json)
+  - [OpenAPI definition (YAML)](https://sebysr.github.io/tech-quotes/openapi.yml)
+  - [OpenAPI definition (JSON)](https://sebysr.github.io/tech-quotes/openapi.json)
 
-[![Open API V3](https://img.shields.io/badge/open--API-in--editor-brightgreen.svg?style=flat&label=open-api-v3)](https://editor-next.swagger.io/?url=https%3A%2F%2FfullStackbulletin.github.io%2Ftech-quotes%2Fopenapi.yml)
+[![Open API V3](https://img.shields.io/badge/open--API-in--editor-brightgreen.svg?style=flat&label=open-api-v3)](https://editor-next.swagger.io/?url=https%3A%2F%2Fsebysr.github.io%2Ftech-quotes%2Fopenapi.yml)
 
 There are some endpoints available:
 
@@ -27,7 +29,7 @@ Returns statistics about all the available quotes.
 #### Example
 
 ```bash
-curl https://fullStackbulletin.github.io/tech-quotes/quotes/stats.json | jq .
+curl https://sebysr.github.io/tech-quotes/quotes/stats.json | jq .
 ```
 
 Returns
@@ -35,10 +37,10 @@ Returns
 ```json
 {
   "total": 53,
-  "all": "https://fullStackbulletin.github.io/tech-quotes/quotes/all.json",
-  "first": "https://fullStackbulletin.github.io/tech-quotes/quotes/0.json",
-  "last": "https://fullStackbulletin.github.io/tech-quotes/quotes/52.json",
-  "urlPrefix": "https://fullStackbulletin.github.io/tech-quotes/quotes"
+  "all": "https://sebysr.github.io/tech-quotes/quotes/all.json",
+  "first": "https://sebysr.github.io/tech-quotes/quotes/0.json",
+  "last": "https://sebysr.github.io/tech-quotes/quotes/52.json",
+  "urlPrefix": "https://sebysr.github.io/tech-quotes/quotes"
 }
 ```
 
@@ -49,7 +51,7 @@ Returns all the quotes
 #### Example
 
 ```bash
-curl https://fullStackbulletin.github.io/tech-quotes/quotes/all.json | jq .
+curl https://sebysr.github.io/tech-quotes/quotes/all.json | jq .
 ```
 
 Returns
@@ -70,9 +72,9 @@ Returns
         "name": "Alan Kay",
         "description": "Computer Scientist",
         "wiki": "https://en.wikipedia.org/wiki/Alan_Kay",
-        "url": "https://fullStackbulletin.github.io/tech-quotes/authors/alan-kay.json"
+        "url": "https://sebysr.github.io/tech-quotes/authors/alan-kay.json"
       },
-      "url": "https://fullStackbulletin.github.io/tech-quotes/quotes/0.json"
+      "url": "https://sebysr.github.io/tech-quotes/quotes/0.json"
     },
     {
       "id": 1,
@@ -82,9 +84,9 @@ Returns
         "name": "Arthur C. Clarke",
         "description": "Author",
         "wiki": "https://en.wikipedia.org/wiki/Arthur_C._Clarke",
-        "url": "https://fullStackbulletin.github.io/tech-quotes/authors/arthur-c-clarke.json"
+        "url": "https://sebysr.github.io/tech-quotes/authors/arthur-c-clarke.json"
       },
-      "url": "https://fullStackbulletin.github.io/tech-quotes/quotes/1.json"
+      "url": "https://sebysr.github.io/tech-quotes/quotes/1.json"
     },
     {
       "//": "...",
@@ -100,7 +102,7 @@ Gets a single quote by ID:
 #### Example
 
 ```bash
-curl https://fullStackbulletin.github.io/tech-quotes/quotes/17.json | jq .
+curl https://sebysr.github.io/tech-quotes/quotes/17.json | jq .
 ```
 
 Returns
@@ -114,9 +116,9 @@ Returns
     "name": "John Lasseter",
     "description": "Director",
     "wiki": "https://en.wikipedia.org/wiki/John_Lasseter",
-    "url": "https://fullStackbulletin.github.io/tech-quotes/authors/john-lasseter.json"
+    "url": "https://sebysr.github.io/tech-quotes/authors/john-lasseter.json"
   },
-  "url": "https://fullStackbulletin.github.io/tech-quotes/quotes/17.json"
+  "url": "https://sebysr.github.io/tech-quotes/quotes/17.json"
 }
 ```
 
@@ -128,7 +130,7 @@ Gets statistics abouts the authors
 #### Example
 
 ```bash
-curl https://fullStackbulletin.github.io/tech-quotes/authors/stats.json | jq .
+curl https://sebysr.github.io/tech-quotes/authors/stats.json | jq .
 ```
 
 Returns
@@ -136,8 +138,8 @@ Returns
 ```json
 {
   "total": 51,
-  "all": "https://fullStackbulletin.github.io/tech-quotes/authors/all.json",
-  "urlPrefix": "https://fullStackbulletin.github.io/tech-quotes/authors"
+  "all": "https://sebysr.github.io/tech-quotes/authors/all.json",
+  "urlPrefix": "https://sebysr.github.io/tech-quotes/authors"
 }
 ```
 
@@ -148,7 +150,7 @@ Gets the list of all available authors
 #### Example
 
 ```bash
-curl https://fullStackbulletin.github.io/tech-quotes/authors/all.json | jq .
+curl https://sebysr.github.io/tech-quotes/authors/all.json | jq .
 ```
 
 Returns
@@ -179,7 +181,7 @@ Gets the details and the quote of a given author
 #### Example
 
 ```bash
-curl https://fullStackbulletin.github.io/tech-quotes/authors/andrew-s-tanenbaum.json | jq .
+curl https://sebysr.github.io/tech-quotes/authors/andrew-s-tanenbaum.json | jq .
 ```
 
 Returns
@@ -190,12 +192,12 @@ Returns
   "name": "Andrew S. Tanenbaum",
   "description": "Computer Scientist",
   "wiki": "https://en.wikipedia.org/wiki/Andrew_S._Tanenbaum",
-  "url": "https://fullStackbulletin.github.io/tech-quotes/authors/andrew-s-tanenbaum.json",
+  "url": "https://sebysr.github.io/tech-quotes/authors/andrew-s-tanenbaum.json",
   "quotes": [
     {
       "id": 31,
       "text": "Never underestimate the bandwidth of a station wagon full of tapes hurtling down the highway",
-      "url": "https://fullStackbulletin.github.io/tech-quotes/quotes/31.json"
+      "url": "https://sebysr.github.io/tech-quotes/quotes/31.json"
     }
   ]
 }
@@ -224,18 +226,18 @@ This command will guide you through the process of adding a new quote, including
 
 ### Manual Process
 
-- [Fork this repository](https://github.com/FullStackBulletin/tech-quotes/fork)
+- [Fork this repository](https://github.com/sebysr/tech-quotes/fork)
 - Edit the file [`src/quotes.ts`](/src/quotes.ts) and append the new fact at the bottom (make sure to follow the spec provided by the specific TypeScript types).
 - Run `npm run test && npm run build`
 - If all looks good, commit your changes
-- Open a PR against the original repository
+- Open a pull request against this repository
 
 
 ## Contributing
 
 Everyone is very welcome to contribute to this project.
 You can contribute just by submitting bugs or suggesting improvements by
-[opening an issue on GitHub](https://github.com/FullStackBulletin/tech-quotes/issues).
+[opening an issue on GitHub](https://github.com/sebysr/tech-quotes/issues).
 
 
 ## License
