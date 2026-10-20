@@ -1304,6 +1304,12 @@ const quotes: RawQuote[] = [
     text: 'There are a minimum of three developers on any project. You in the past. You right now. You in the future.\nThe only way you can communicate with you in the past and future is with documentation, commit history and expressive code or comments.',
     authorName: 'RoboErectus',
     authorDescription: 'Engineer'
+  },
+  {
+    text: 'Simplicity is prerequisite for reliability.',
+    authorName: 'E.W. Dijkstra',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/E._W._Dijkstra'
   }
 ]
 
