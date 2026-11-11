@@ -1310,6 +1310,41 @@ const quotes: RawQuote[] = [
     authorName: 'E.W. Dijkstra',
     authorDescription: 'Computer Scientist',
     authorWiki: 'https://en.wikipedia.org/wiki/E._W._Dijkstra'
+  },
+  {
+    text: 'Vibe coding is about raising the floor for everyone in terms of what they can do in software. Agentic engineering is about preserving the quality bar of what existed before in professional software.',
+    authorName: 'Andrej Karpathy',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Andrej_Karpathy'
+  },
+  {
+    text: 'Traditional computers can easily automate what you can specify in code. This latest round of LLMs can easily automate what you can verify.',
+    authorName: 'Andrej Karpathy',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Andrej_Karpathy'
+  },
+  {
+    text: 'When you actually look at the code, sometimes I get a little bit of a heart attack because it\'s very bloated and there\'s a lot of copy-paste and there\'s awkward abstractions that are brittle and like it works but it\'s just really gross.',
+    authorName: 'Andrej Karpathy',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Andrej_Karpathy'
+  },
+  {
+    text: 'You basically still have to be in charge of the aesthetics, the judgment, the taste, and a little bit of oversight.',
+    authorName: 'Andrej Karpathy',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Andrej_Karpathy'
+  },
+  {
+    text: 'You need to actually be in the loop a little bit and you need to treat them as tools and you do have to kind of stay in touch with what they\'re doing.',
+    authorName: 'Andrej Karpathy',
+    authorDescription: 'Computer Scientist',
+    authorWiki: 'https://en.wikipedia.org/wiki/Andrej_Karpathy'
+  },
+  {
+    text: 'You can outsource your thinking, but you can\'t outsource your understanding.',
+    authorName: 'yacineMTB',
+    authorDescription: 'Software Developer'
   }
 ]
 
