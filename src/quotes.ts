@@ -19,13 +19,15 @@ export type AuthorDescription =
   'Physicist' |
   'Scientist' |
   'Software Developer' |
-  'Ethnographer'
+  'Ethnographer' |
+  'Engineering leader at Google'
 
 export interface RawQuote {
   text: string
   authorName: string
   authorDescription: AuthorDescription
   authorWiki?: `https://en.wikipedia.org/wiki/${string}`
+  source?: `https://${string}`
 }
 
 export interface Author {
@@ -43,6 +45,7 @@ export interface AuthorWithQuotes extends Author {
 export interface Quote {
   id: number
   text: string
+  source?: `https://${string}`
   author: Author
   url: `${string}/quotes/${number}.json`
 }
@@ -1345,6 +1348,72 @@ const quotes: RawQuote[] = [
     text: 'You can outsource your thinking, but you can\'t outsource your understanding.',
     authorName: 'yacineMTB',
     authorDescription: 'Software Developer'
+  },
+  {
+    text: 'Every gripe you have about bad managers is a bug report for interacting with agents.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2119332146485891501'
+  },
+  {
+    text: 'With agents, over-process is the new micromanagement.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2119332146485891501'
+  },
+  {
+    text: 'This is not code review, this is code ratification.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2119332146485891501'
+  },
+  {
+    text: 'The unit of review is the unit of comprehension.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2119332146485891501'
+  },
+  {
+    text: 'Five agents taking on overlapping tasks won\'t lead to five times the output, it leads to one merge conflict with five authors.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2119332146485891501'
+  },
+  {
+    text: 'You can\'t scale the number of agents by monitoring more, only by needing to monitor less.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2119332146485891501'
+  },
+  {
+    text: 'If it\'s cheap to build the hard question is not \'can we?\' but \'should we?\'',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2119332146485891501'
+  },
+  {
+    text: 'Review and validation are the scarce resources now.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2119332146485891501'
+  },
+  {
+    text: 'Agents don\'t have experience, just a notebook.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2119332146485891501'
+  },
+  {
+    text: 'The job is becoming less about writing the code and more about being the reason good code gets written.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2119332146485891501'
+  },
+  {
+    text: 'If there\'s no validation, \'looks done\' is the only validation the agent has.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2119332146485891501'
   }
 ]
 

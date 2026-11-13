@@ -64,6 +64,7 @@ function mapQuote (id: string, quote: RawQuote): Quote {
   return {
     id: idAsNumber,
     text: quote.text,
+    source: quote.source,
     author: makeAuthor(quote.authorName, quote.authorDescription, quote.authorWiki),
     url: `${baseUrl}/quotes/${idAsNumber}.json`
   }

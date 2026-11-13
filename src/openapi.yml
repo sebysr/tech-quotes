@@ -130,6 +130,10 @@ components:
         text:
           type: string
           description: Quote text
+        source:
+          type: string
+          description: URL to the original source of the quote
+          nullable: true
         url:
           type: string
           description: URL to retrieve the quote
