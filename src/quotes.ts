@@ -1414,6 +1414,84 @@ const quotes: RawQuote[] = [
     authorName: 'Addy Osmani',
     authorDescription: 'Engineering leader at Google',
     source: 'https://x.com/addyosmani/status/2119332146485891501'
+  },
+  {
+    text: 'Even if you are running many agents at a time, you still only have one pair of eyes on the outputs.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2117512471930167377'
+  },
+  {
+    text: 'You have to build critical thinking into your day, because by default nothing will do it for you.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2117512471930167377'
+  },
+  {
+    text: 'You don\'t need to maintain the full model as long as you can rebuild it locally as needed. You just need to know what you don\'t have.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2117512471930167377'
+  },
+  {
+    text: 'The finish line for agent work should be something tangible: a test passing, a screenshot, a log or trace.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2117512471930167377'
+  },
+  {
+    text: 'Agents have made verification cheap to set up. What\'s difficult for you is knowing what good verification looks like.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2117512471930167377'
+  },
+  {
+    text: 'Have a hypothesis. Formulate one before asking, even if it\'s bad.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2117512471930167377'
+  },
+  {
+    text: 'A green check means one thing. What did it check? What did it not check?',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2117512471930167377'
+  },
+  {
+    text: 'Look for evidence. Read what it ran and what it returned before reading the summary.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2117512471930167377'
+  },
+  {
+    text: 'How you write what you prompt shows how much you understood the problem.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2117512471930167377'
+  },
+  {
+    text: 'If you wouldn\'t put your name on it, it doesn\'t go out.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2117512471930167377'
+  },
+  {
+    text: 'Think independently. Ask better questions. Take responsibility for the outcome.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2117512471930167377'
+  },
+  {
+    text: 'When you\'re producing more than you can stand behind, you\'re no longer reviewing. You\'re hoping.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2117512471930167377'
+  },
+  {
+    text: 'You may offload the work and much of the auditing, but not the accountability.',
+    authorName: 'Addy Osmani',
+    authorDescription: 'Engineering leader at Google',
+    source: 'https://x.com/addyosmani/status/2117512471930167377'
   }
 ]
 
